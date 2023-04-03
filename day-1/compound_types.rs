@@ -9,7 +9,7 @@ fn main() {
     let mut z: i32 = 5;
 
     // We can combine this with standard named formatting.
-    println!("a: {:?}, {z}", a);
+    println!("a: {:#?}, {z}", a);
     
     // Or positional formatting for standard variables.
     println!("a: {:?}, {}", a, z);
@@ -21,5 +21,5 @@ fn main() {
     
     // Rust also has the concept of "struct tuples".
     struct NamedT(i8, bool);
-    let t_named = NamedT(7, true)
+    let t_named = NamedT(7, true);
 }
